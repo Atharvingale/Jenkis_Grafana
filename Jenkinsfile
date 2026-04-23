@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Source') {
             steps {
-                git 'https://github.com/yourusername/repo.git'
+                git 'https://github.com/Atharvingale/Jenkis_Grafana.git'
             }
         }
 
