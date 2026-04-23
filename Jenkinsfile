@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/Atharvingale/Jenkis_Grafana.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t myapp .'
