@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone Source') {
             steps {
-                git 'https://github.com/Atharvingale/Jenkis_Grafana.git'
+                git branch: 'main',
+                url: 'https://github.com/Atharvingale/Jenkis_Grafana.git'
             }
         }
 
